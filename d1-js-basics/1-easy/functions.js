@@ -6,5 +6,13 @@
         Log it to the console.
 */
 
+const outsideVoice = (string) => {
+	console.log(string + '!!!');
+}
+
+const addThreeTripled = (num1, num2, num3) => {
+	console.log((num1 + num2 + num3) * 3);
+}
+
 // Test command (in terminal) "npm run test:d1:easy:functions"
 module.exports = { outsideVoice, addThreeTripled };

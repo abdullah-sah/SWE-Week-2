@@ -13,7 +13,16 @@ Create a variable called z and assign a value of 12.
 */
 
 function d1EasyNumbers() {
-  //code goes here
+  let x = 2;
+  let y = 5;
+  let z = 12;
+  console.log(x);
+  console.log(y);
+  console.log(z);
+  console.log(2 * x);
+  console.log((3 * y));
+  console.log(z / 2);
+  console.log(x + y + z);
 }
 d1EasyNumbers();
 

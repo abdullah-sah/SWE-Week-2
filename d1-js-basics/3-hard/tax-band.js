@@ -18,7 +18,35 @@ Example £15,000.00 =>  £12,570.00 isn't taxed, then the remaining £2,430.00 i
 ||============================================||
 */
 
-function taxBand(salary) {}
+const taxBand = (salary, deducted) => {
+	// You have a total salary:
+	// You want to calculate tax for each band
+	// 		if salary > band1 ==> check band2
+	// 		if salary > band2 ==> check band3
+	// 		if salary > band3 ==> check band4
+	// 			calculate the tax percentage for this band, store in a variable called deducted	
+	//			find difference of salary and band4
+	// 			repeat process until last else case, then return salary - deducted;
+
+	if (salary >= 150000) {
+		let difference = salary - 150000;
+		deducted += difference * 0.45;
+		taxBand(salary - difference);
+	} else if (salary >= 50270) {
+		let difference = salary - 50270;
+		deducted += difference * 0.4;
+		taxBand(salary - difference);
+	} else if (salary >= 12570) {
+		let difference = salary - 12570;
+		deducted += difference * 0.2;
+		taxBand(salary - difference);
+	} else {
+		return salary - deducted;
+	}
+}
+
+300
+200
 
 con;
 

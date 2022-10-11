@@ -5,5 +5,9 @@ It will return the area of the trapezium.
 =====================================================================================
 Code Below*/
 
+const findArea = (base1, base2, height) => {
+	return (((base1 + base2) * 0.5) * height);
+}
+
 // Test command (in terminal) "npm run test:d1:medium:trapezium"
 module.exports = { findArea };

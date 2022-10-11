@@ -10,19 +10,51 @@ Create the object spaceStats.
 This will have the following:
 Properties - ageInEarthDays, weightInKG
 Methods - setAgeInEarthDays(birthday) 
-            birthday is a string in the format mm/dd/yyyy
-            using today's date and the birthday date provided, work out the time in days. 
-            set ageInEarthDays to this value
-        - setWeightInKG(kg)
-            set weightInKG using incoming argument value
-        - weightOnMercury() 
-        - ageOnMercury()
-        - weightOnVenus()
-        - ageOnVenus()
-        - weightOnMars()
-        - ageOnMars()
+		birthday is a string in the format mm/dd/yyyy
+		using today's date and the birthday date provided, work out the time in days. 
+		set ageInEarthDays to this value
+- setWeightInKG(kg)
+		set weightInKG using incoming argument value
+- weightOnMercury() 
+- ageOnMercury()
+- weightOnVenus()
+- ageOnVenus()
+- weightOnMars()
+- ageOnMars()
 
 */
+
+let spaceStats = {
+	ageInEarthDays: 0,
+	weightInKG: 0,
+	setAgeInEarthDays(birthday) {
+		let otherDate = new Date(birthday);
+		let date = new Date();
+		let ageInEarthDays = Math.round((date - otherDate) / (1000 * 3600 * 24));
+		this.ageInEarthDays  = ageInEarthDays;
+	},
+	setWeightInKG(kg) {
+		this.weightInKG = kg;
+	},
+	weightOnMercury() {
+
+	},
+	ageOnMercury() {
+
+	},
+	weightOnVenus() {
+
+	},
+	ageOnVenus() {
+
+	},
+	weightOnMars() {
+
+	},
+	ageOnMars() {
+
+	}
+}
 
 // Test command (in terminal) "npm run test:d2:hard:spaceFacts"
 module.exports = { spaceStats };

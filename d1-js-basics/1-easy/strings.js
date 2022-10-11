@@ -12,7 +12,16 @@ Create a variable called fifthLine and assign a value of "Yeeeaaahhh!!!"
 */
 
 function d1EasyStrings() {
-  //write code here
+  let firstLine = 'Knock Knock.';
+  console.log(firstLine);
+  let secondLine = 'Who\'s there?';
+  console.log(secondLine);
+  let thirdLine = 'The.';
+  console.log(thirdLine);
+  let fourthLine = 'The Who?';
+  console.log(fourthLine);
+  let fifthLine = 'Yeeeaaahhh!!!';
+  console.log(fifthLine);
 }
 d1EasyStrings();
 

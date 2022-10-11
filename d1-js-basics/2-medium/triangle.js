@@ -8,5 +8,20 @@ Each number given is the length of a line.
 =====================================================================================
 Code Below*/
 
+// a + b > c
+// a + c > b
+// b + c > a
+function isTriangle(s1, s2, s3) {
+  if (!(s1 + s2 > s3 && s1 + s3 > s2 && s2 + s3 > s1)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function findPerimeter(s1, s2, s3) {
+  return s1 + s2 + s3;
+}
+
 // Test command (in terminal) "npm run test:d1:medium:triangle"
 module.exports = { isTriangle, findPerimeter };

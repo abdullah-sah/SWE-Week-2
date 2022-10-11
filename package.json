@@ -41,5 +41,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.2"
+  },
+  "dependencies": {
+    "figlet": "^1.5.2"
   }
 }
