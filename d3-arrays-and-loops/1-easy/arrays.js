@@ -14,24 +14,29 @@ arr.includes
 
 //CREATE
 //add "orange" to the beginning of the array
-
+fruits.unshift('orange');
 //add "raspberry" to the end of the array
-
+fruits.push('raspberry');
 // insert "mango" into the fruits array as the 6th item
-
+fruits[6] = 'mango';
 //READ
 
 // declare a variable called isPineapple and check if the fruits array contains an element with value of 'pineapple'
 // declare a variable called isCarrot and check if the fruits array contains an element with value of 'carrot'
 //What is the index of 'grape'?  Log this to console.
 //log the 5th element to the console
+let isPineable = fruits.includes('pineapple');
+let isCarrot = fruits.includes('carrot');
+console.log(fruits.indexOf('grape'));
+console.log(fruits[5]);
+
 
 //UPDATE
 //that fifth element doesn't look right...  update it to "Leeloo Dallas Multipass"
-
+fruits[5] = 'Leeloo Dallas Multipass';
 //DELETE
 
 // The bananas are too bendy!  Find 'banana' and delete it!!
-
+fruits.splice(fruits.indexOf('banana', 1));
 // Test command (in terminal) "npm run test:d3:easy:arrays"
 module.exports = { fruits, isCarrot, isPineapple };
