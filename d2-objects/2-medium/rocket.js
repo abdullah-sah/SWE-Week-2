@@ -19,20 +19,20 @@ let rocket = {
   fuelCostToB: 30,
   fuelCostToC: 35,
   flyToA() {
-    if (this.fuel >= 20) {
-      this.fuel -= 20;
+    if (this.fuel >= 20 * 2) {
+      this.fuel -= 20 * 2;
       return true;
     } else return false;
   },
   flyToB() {
-    if (this.fuel >= 30) {
-      this.fuel -= 30;
+    if (this.fuel >= 30 * 2) {
+      this.fuel -= 30 * 2;
       return true;
     } else return false;
   },
   flyToC() {
-    if (this.fuel >= 35) {
-      this.fuel -= 35;
+    if (this.fuel >= 35 * 2) {
+      this.fuel -= 35 * 2;
       return true;
     } else return false;
   }

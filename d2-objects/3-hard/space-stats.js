@@ -28,19 +28,19 @@ let spaceStats = {
 	ageInEarthDays: 0,
 	weightInKG: 0,
 	setAgeInEarthDays(birthday) {
-		let otherDate = new Date(birthday);
-		let date = new Date();
-		let ageInEarthDays = Math.round((date - otherDate) / (1000 * 3600 * 24));
+		let birthDate = new Date(birthday);
+		let timeAlive = new Date() - birthDate;
+		let ageInEarthDays = Math.round(timeAlive / (1000 * 3600 * 24));
 		this.ageInEarthDays  = ageInEarthDays;
 	},
 	setWeightInKG(kg) {
 		this.weightInKG = kg;
 	},
-	weightOnMercury() {
-
+	weightOnMercury(kg) {
+		this.weightInKG(kg * 0.38);
 	},
 	ageOnMercury() {
-
+		return this.ageInE
 	},
 	weightOnVenus() {
 

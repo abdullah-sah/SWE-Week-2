@@ -14,9 +14,9 @@ const cargo = {
 	shareTheLoad() {
 		let load = (this.ship1 + this.ship2 + this.ship3) / 3;
 		return {
-			ship1: load,
-			ship2: load,
-			ship3: load
+			ship1: load - this.ship1,
+			ship2: load - this.ship2,
+			ship3: load - this.ship3
 		}
 	}
 }
