@@ -25,7 +25,7 @@
             returns final cost
   */
 
-let itemsList = {};
+let itemsList = { cheese: { weight: 500, cost: 3, }, bread: { weight: 200, cost: 1.4, }, milk: { weight: 1000, cost: 1.5, }, };
 let checkout = {
   items: [],
   weight: 0,
@@ -46,6 +46,9 @@ let checkout = {
     this.items = [];
     this.weight = 0;
     this.cost = 0;
+  },
+  finalise() {
+    return this.cost;
   }
 };
 
