@@ -19,7 +19,7 @@ let employee = {
 		return count;
 	},
 	addShift(shiftLength) {
-		if (this.weeklyHours.length >= 5 || this.getTotalHours() >= 40) {
+		if (this.weeklyHours.length >= 5 || this.getTotalHours() + shiftLength >= 40) {
 			return 'Shift limit reached.';
 		} else {
 			this.weeklyHours.push(shiftLength);
