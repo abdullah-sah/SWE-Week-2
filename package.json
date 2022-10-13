@@ -35,7 +35,17 @@
     "test:d3:easy:arrays": "jest ./test/d3-arrays-and-loops/easy/arrays --silent --verbose --runInBand",
     "test:d3:medium": "jest ./test/d3-arrays-and-loops/medium --silent --verbose --runInBand --bail",
     "test:d3:hard": "jest ./test/d3-arrays-and-loops/hard --silent --verbose --runInBand --bail",
-    "test:extras": "jest ./test/extras --silent --verbose --runInBand --bail"
+    "test:extras": "jest ./test/extras --silent --verbose --runInBand --bail",
+    "test:extras:arraySameOrdered": "jest ./test/extras/arraySameOrdered --silent --verbose --runInBand",
+    "test:extras:arraySameUnordered": "jest ./test/extras/arraySameUnordered --silent --verbose --runInBand",
+    "test:extras:bigWords": "jest ./test/extras/bigWords --silent --verbose --runInBand",
+    "test:extras:cleanUp": "jest ./test/extras/cleanUp --silent --verbose --runInBand",
+    "test:extras:copyPaste": "jest ./test/extras/copyPaste --silent --verbose --runInBand",
+    "test:extras:levelUp": "jest ./test/extras/levelUp --silent --verbose --runInBand",
+    "test:extras:rotate": "jest ./test/extras/rotate --silent --verbose --runInBand",
+    "test:extras:stepCount": "jest ./test/extras/stepCount --silent --verbose --runInBand",
+    "test:extras:targetPractice": "jest ./test/extras/targetPractice --silent --verbose --runInBand",
+    "test:extras:unduplicate": "jest ./test/extras/unduplicate --silent --verbose --runInBand"
   },
   "author": "",
   "license": "ISC",

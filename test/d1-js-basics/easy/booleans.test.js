@@ -1,4 +1,3 @@
-const { textSync } = require('figlet');
 const { d1EasyBooleans } = require('../../../d1-js-basics/1-easy/booleans');
 describe('"isDarkMode"', () => {
   const consoleSpy = jest.spyOn(console, 'log');

@@ -20,6 +20,6 @@ describe('Conditionals', () => {
   });
   it('6 logs "Slow down, Einstein', () => {
     d1EasyConditionals(6);
-    expect(spy).toBeCalledWith('Slow down, Einstein');
+    expect(spy).toBeCalledWith('Slow down, Einstein!');
   });
 });
