@@ -9,7 +9,18 @@
  */
 
 function arraySameOrdered(arr1, arr2) {
-  // code here
+  if (arr1.length !== arr2.length) {
+    return false;
+  } else {
+    arr1.forEach((val, i) => {
+      if (Number(val) !== Number(arr2[i])) {
+        return false;
+      }
+    });
+    return true;
+  }
 }
+console.log(arraySameOrdered([1, 2, 4], [1, 2, 3]));
+// arraySameOrdered([1, 2, 4, 3], [1, 2, 4, 5]);
 
 module.exports = { arraySameOrdered };
